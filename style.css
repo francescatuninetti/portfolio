@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "SF UI Text", serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header p{
+    margin: 15px 0 0 30px;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header img {
+    width: 80%;
+    margin: 2%;
+}
+
+.displayNone {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: white;
+    z-index: 1000;
+}
+
+.inline{
+    display: inline;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.exit{
+    color: white;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.menu-items li {
+    margin-bottom: 10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.homepage {
+    height: 100vh; /* Set the height of the homepage */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/hp.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay1 {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    background-color: #1C2936;
+}
+
+.overlay1 h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.overlay1 h2 span:not(.subtitle){
+    color: #9BB5C0;
+    font-size: 1.2rem;
+}
+
+.overlay1 h2 span.subtitle {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.overlay2 {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    width: 20%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+    padding:10px;
+    margin: 2%;
+    background-color: white;
+    opacity: 40%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.overlay2_hidden {
+    color: white;
+}
