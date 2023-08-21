@@ -4,6 +4,7 @@ const exitMenu = document.querySelector('.exit');
 const aboutMe = document.getElementById('aboutMe');
 const myProjects = document.getElementById('myProjects');
 const logo = document.getElementById('logo');
+const computerVision = document.getElementById('computerVision');
 
 
 exitMenu.addEventListener('click', () => {
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let textAboutMe = 'aboutMe = francesca.describe() ';
     let textMyProjects = 'myProjects = francesca.projects() ';
     let textLogo = 'FRANCESCA( ) '
+    let textComputerVision = 'computerVision = francesca.blog() ';
     let i = 0;
 
     logo.addEventListener('mouseover', function() {
@@ -39,18 +41,29 @@ document.addEventListener("DOMContentLoaded", function() {
         animateText(textAboutMe, aboutMe);
     });
 
+    aboutMe.addEventListener('mouseout', function() {
+        aboutMe.textContent = 'aboutMe';
+    });
+
     myProjects.addEventListener('mouseover', function() {
         i = 0; // Reimposta l'indice per l'animazione
         animateText(textMyProjects, myProjects);
     });
 
-    aboutMe.addEventListener('mouseout', function() {
-        aboutMe.textContent = 'aboutMe';
-    });
-
     myProjects.addEventListener('mouseout', function() {
         myProjects.textContent = 'myProjects';
     });
+
+    computerVision.addEventListener('mouseover', function() {
+        i = 0; // Reimposta l'indice per l'animazione
+        animateText(textComputerVision, computerVision);
+    });
+
+    computerVision.addEventListener('mouseout', function() {
+        computerVision.textContent = 'computerVision';
+    });
+
+
 
     function animateText(text, element) {
         if (i < text.length) {

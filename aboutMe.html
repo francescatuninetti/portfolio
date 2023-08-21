@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+    <style>
+        @font-face {
+            font-family: 'SF UI Text';
+            src: url("https://d33wubrfki0l68.cloudfront.net/7f5efbefa73e3ee486c502b66fb9200e108ad047/cbb2f/fonts/sf-ui-text-heavy.woff") format('woff');
+            font-display: swap;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        @font-face {
+            font-family: 'SF UI Text';
+            src: url("https://d33wubrfki0l68.cloudfront.net/ecc2177145d53dcd3f567531af3e9557fb211d3b/4faff/fonts/sf-ui-text-regular.woff") format('woff');
+            font-display: swap;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'SF UI Text';
+            src: url("https://d33wubrfki0l68.cloudfront.net/8036012d5d6add8a4bad0ea000696eaaa65f48e8/b349c/fonts/sf-ui-text-bold.woff") format('woff');
+            font-display: swap;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        @font-face {
+            font-family: 'SF UI Text';
+            src: url("https://d33wubrfki0l68.cloudfront.net/e8020de2a082b7f99bd455cd96d87d90e5104367/809fe/fonts/sf-ui-text-light.woff") format('woff');
+            font-display: swap;
+            font-style: normal;
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo cliccabile che rimanda alla home -->
+
+    <header>
+        <a href="index.html">
+            <p id = logo>F()</p>
+        </a>
+    </header>
+
+    <!-- menu a tendina in alto a dx-->
+
+    <nav class="burger-menu">
+        <div class="flex flex-column" id="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <p style="color:white" class="displayNone exit">X</p>
+
+        <ul class="menu-items displayNone">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+    <div class="aboutMe">
+
+        <!-- Immagine di sfondo full screen -->
+
+        <div class="fullscreen-image">
+
+            <!-- Container grid per layout a colonne -->
+
+            <div class="grid-container">
+
+                <!-- Div flex row con qualche numero su me stessa -->
+
+                <div class="aboutMe_overlay col-4 flex flex-row">
+                    <img src="/img/wp_fra.png" class="francesca" alt="Francesca">
+                    <div class=" flex-column">
+                        <h2>29</h2>
+                        <p>years </br> old</p>
+                    </div>
+                    <div class=" flex-column">
+                        <h2>5</h2>
+                        <p>years of experience </br> as Consultant</p>
+                    </div>
+                    <div class=" flex-column">
+                        <h2>4</h2>
+                        <p>Coding </br> languages</p>
+                    </div>
+                    <div class=" flex-column">
+                        <h2>2023</h2>
+                        <p>Graduation in</br> Computer engineering</p>
+                    </div>
+                </div>
+
+                <!-- Elenco dei miei profili lavorativi-->
+
+                <div class="aboutMe_overlay2 col-2 flex flex-column">
+                    <div class="flex flex-column">
+                        <h3>Python developer</h3>
+                        <img src="/img/python.png" class="icons" alt="Python">
+                    </div>
+                    <div class=" flex flex-column">
+                        <h3>Machine Learning developer</h3>
+                        <img src="/img/neuronal.png" class="icons" alt="Python">
+                    </div>
+                    <div class=" flex flex-column">
+                        <h3>Computer Vision Engineer</h3>
+                        <img src="/img/vision.png" class="icons" alt="Python">
+                    </div>
+                </div>
+
+                <!-- Breve descrizione personale -->
+
+                <div class="aboutMe_overlay2 col-2">
+                    <p>
+                        I'm Francesca, a computer engineer always busy in learning something new. </br>
+                        My journey includes diving into frontend world with HTML5, CSS, and JavaScript.
+
+                        However, my heart belongs to <span style = "color: #9BB5C0 ; font-weight:bold">Python</span>
+                        <span style = "color: #9BB5C0 ; font-weight:bold">Machine Learning</span> algorithms and
+                        <span style = "color: #9BB5C0 ; font-weight:bold">Computer Vision</span>. </br>
+
+                        Beyond coding, you'll find me in nature, engrossed in novels, perfecting my coffee brewing skills
+                        or cuddling my furry cats.
+                    </p>
+                </div>
+
+                <!-- Pulsanti di download e contatti -->
+
+                <a class="overlay2 flex col-2">
+                    downloadMyCv()
+                </a>
+                <a class="overlay2 flex col-2" id = "aboutMe" href="#contact-form">
+                    getInTouch()
+                </a>
+            </div>
+        </div>
+
+        <!-- Form di contatto-->
+
+        <div class="contact-form" id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
