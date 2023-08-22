@@ -7,7 +7,7 @@ body {
 
 header p{
     margin: 15px 0 0 30px;
-    font-size: 2rem;
+    font-size: 1.5vw;
     color: white;
     font-weight: bold;
     position: fixed;
@@ -93,59 +93,58 @@ header img {
 }
 
 .aboutMe {
-    height: 100vh;
+    height: 130vh;
 }
 
 .fullscreen-image {
     width: 100%;
-    height: 100%;
+    height: 150%;
     background-image: url('img/hp.png');
     background-size: cover;
     background-position: center;
 }
 
 .overlay1 {
-    position: relative;
-    top: 30%;
-    left: 50%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
     width: 50%;
-    transform: translate(-50%, -50%);
     padding: 2%;
     background-color: #1C2936;
 }
 
 .overlay1 h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5vw;
     margin: 0;
     padding: 0;
 }
 
 .overlay1 h2 span:not(.subtitle){
     color: #9BB5C0;
-    font-size: 1.2rem;
+    font-size: 1vw;
 }
 
 .overlay1 h2 span.subtitle {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1vw;
 }
 
 .overlay2 {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 30%;
+    top: 60%;
     left: 50%;
-    width: 20%;
-    height: 5%;
+    width: 15%;
     transform: translate(-50%, -50%);
-    padding:10px;
-    margin: 2%;
     background-color: white;
     opacity: 40%;
-    font-size: 1rem;
+    font-size: 0.8vw !important;
     font-weight: bold;
+    color: #1C2936;
+    padding: 1%;
+    margin: 0 0 2% 0;
 }
 
 .overlay2_hidden {
@@ -163,7 +162,7 @@ header img {
 .grid-container a {
     background-color: white;
     opacity: 40%;
-    font-size: 1rem;
+    font-size: 0.9vw;
     font-weight: bold;
     margin: 1% 0 1% 0;
     height: 70%;
@@ -183,28 +182,29 @@ header img {
 }
 
 .francesca{
-    height: 200px;
+    max-width: 12%;
+    max-height: 100%;
 }
 
 .aboutMe_overlay {
     background-color: #1C2936;
     color: white;
     margin-top: 10%;
+    max-height: 20vh;
 }
 
 .aboutMe_overlay div p {
-    font-size: 1.2rem;
+    font-size: 1vw;
     font-weight: bold;
     margin: 5% 0 0 0;
 }
-
 
 .aboutMe_overlay div{
     margin: 0 3% 0 5%;
 }
 
 .aboutMe_overlay div h2 {
-    font-size: 2.5rem;
+    font-size: 1.8vw;
     font-weight: bold;
     margin: 0;
     color: #9BB5C0;
@@ -213,30 +213,38 @@ header img {
 .aboutMe_overlay2 {
     background-color: #1C2936;
     color: white;
+    max-height: 40vh;
+    max-width: 100%;
 }
 
 .aboutMe_overlay2 h3 {
-    font-size: 1.2rem;
+    font-size: 1vw;
     font-weight: bold;
-   margin: 10% 0 5% 0;
+    margin: 0 0 5% 0;
 }
 
 .aboutMe_overlay2 p {
-    font-size: 1.1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9vw;
     font-weight: lighter;
+    margin:0;
     padding: 6% 10% 6% 10%;
     line-height: 2;
 }
 
 .icons{
-    max-height: 50px;
-    max-width: 50px;
-    margin-bottom: 5%;
+    max-height: 30%;
+}
+
+.icons-container {
+    max-height: 30%;
 }
 
 .contact-form {
-    height: 100vh;
-    margin: 0 auto;
+    margin: 15% 0 5% 30%;
+    width: 40%;
+    color: white;
 }
 
 .form-group {
